@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Arezu Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: #f4f4f5;
+      color: #111827;
+      line-height: 1.6;
+    }
+
+    /* Top navigation bar */
+    .topbar {
+      background-color: #111827;
+      color: #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .topbar-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0.8rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .nav-links a {
+      margin-left: 0.75rem;
+      font-size: 0.9rem;
+      color: #e5e7eb;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      .topbar-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links a {
+        margin-left: 0;
+        margin-right: 0.75rem;
+      }
+    }
+
+    /* Main page layout */
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2.5rem 1rem 3rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 2.5rem;
+      margin-bottom: 0.5rem;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.25rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      margin-top: 1.2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    p {
+      margin-bottom: 0.4rem;
+      font-size: 0.97rem;
+    }
+
+    ul {
+      margin-top: 0.2rem;
+      margin-bottom: 0.8rem;
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+.profile-pic {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 1rem auto 1.5rem;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 3px solid #e5e7eb;
+
+}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="logo">Arezu Sultani</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page">
+    <h1>Hi, I’m Arezu </h1>
+<img src="arezu-photo.jpg" alt="Arezu Sultani" class="profile-pic">
+    <p>I'm a junior Computer Science student with a focus on cybersecurity.</p>
+    <p>This is my personal portfolio website where I share my skills and projects.</p>
+
+    <h2 id="about">About Me</h2>
+    <p>I’m passionate about understanding how systems work and how to protect them from real-world cyber threats.</p>
+    <p>I enjoy learning about cloud security, risk analysis, and defensive techniques that keep information safe.</p>
+    <p>My goal is to develop strong hands-on skills, build meaningful projects, and prepare for cybersecurity internships.</p>
+
+    <h2 id="skills">Skills</h2>
+
+    <h3>Programming & Scripting</h3>
+    <ul>
+      <li>Java</li>
+      <li>Python</li>
+      <li>SQL</li>
+      <li>Bash/Shell</li>
+    </ul>
+
+    <h3>Cybersecurity</h3>
+    <ul>
+      <li>Threat Detection &amp; Analysis</li>
+      <li>Network Security</li>
+      <li>Wireshark</li>
+      <li>Kali Linux</li>
+      <li>Identity &amp; Access Management</li>
+      <li>Cloud Security (Google Cloud basics)</li>
+    </ul>
+
+    <h3>Tools &amp; Platforms</h3>
+    <ul>
+      <li>Excel (Pivot Tables, VLOOKUP)</li>
+      <li>Tableau &amp; Power BI</li>
+      <li>SQL Server</li>
+      <li>Linux/UNIX</li>
+    </ul>
+
+    <h2 id="projects">Projects</h2>
+
+    <h3>Deepfake Detection System</h3>
+    <ul>
+      <li>Analyzed and classified manipulated video frames using Java and OpenCV.</li>
+      <li>Used machine learning (DL4J) to detect altered or suspicious content.</li>
+      <li>Designed the system to support data integrity and fraud prevention.</li>
+    </ul>
+
+    <h3>Restaurant Database Application</h3>
+    <ul>
+      <li>Created a database for customers, menu items, and orders using MySQL.</li>
+      <li>Built SQL queries to generate reports (top customers, popular items, etc.).</li>
+      <li>Connected the database to a Java application for real-time interaction.</li>
+    </ul>
+
+    <h3>Cybersecurity Case Study: Credit Card Breach</h3>
+    <ul>
+      <li>Investigated how attackers accessed sensitive financial data.</li>
+      <li>Identified key security weaknesses in logging and access control.</li>
+      <li>Recommended improvements to monitoring, detection, and risk management.</li>
+    </ul>
+
+    <h2 id="experience">Experience</h2>
+
+    <h3>Student Assistant – Financial Aid Office</h3>
+    <p><strong>Northeastern Illinois University · Chicago, IL</strong></p>
+    <ul>
+      <li>Support data validation, documentation, and reporting tasks.</li>
+      <li>Assist with organizing records and process improvements.</li>
+      <li>Work with spreadsheets and student information systems.</li>
+    </ul>
+
+    <h3>Volunteer – RefugeeOne</h3>
+    <p><strong>Chicago, IL</strong></p>
+    <ul>
+      <li>Support refugee families with technology and communication needs.</li>
+      <li>Assist community members in accessing essential services.</li>
+    </ul>
+
+    <h2 id="education">Education</h2>
+    <p><strong>Northeastern Illinois University (NEIU) – Chicago, IL</strong></p>
+    <ul>
+      <li>B.S. in Computer Science, Concentration in Cybersecurity</li>
+      <li>Minor: Business Analytics</li>
+      <li>GPA: 4.00</li>
+      <li>Expected Graduation: Spring 2027</li>
+      <li>4-Year Fully Funded University Scholarship</li>
+    </ul>
+
+    <h2 id="contact">Contact</h2>
+    <p>If you’d like to connect, feel free to reach out.</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:arezosultani946@gmail.com">arezosultani946@gmail.com</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arezosultani12" target="_blank">linkedin.com/in/arezosultani12</a></li>
+      <li><strong>Phone Number:</strong> 479-579-0849</li>
+      <li><strong>Location:</strong> Chicago, IL · Open to relocation for internships</li>
+    </ul>
+  </div>
+</body>
+</html>
